@@ -1,7 +1,7 @@
 import { Resolvers } from './generated/resolvers-types.js'
-import { stores } from './data.js'
+import { stores } from './localData'
 
-export const resolvers : Resolvers = {
+export const localResolvers : Resolvers = {
     Query: {
         stores: () => {
             return stores
