@@ -1,0 +1,26 @@
+{
+  "name": "graphql-inclusion",
+  "version": "1.0.0",
+  "description": "Demonstrates the inclusion of a separated graph in Apollo server",
+  "type": "module",
+  "main": "src/server.ts",
+  "author": "torsten.schlieder@gmx.net",
+  "license": "ISC",
+  "scripts": {
+    "generate": "graphql-codegen --config codegen.yaml",
+    "start": "tsx src/server.ts"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.12.0",
+    "graphql": "^16.11.0",
+    "graphql-tag": "^2.12.6"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.6",
+    "@graphql-codegen/typescript": "^4.1.6",
+    "@graphql-codegen/typescript-resolvers": "^4.5.1",
+    "@types/node": "^22.15.14",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

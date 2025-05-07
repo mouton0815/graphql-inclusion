@@ -1,2 +1,2 @@
-# graphql-inclusion
-Demonstrates the inclusion of a separatedgraph in Apollo server
+# Graphql Inclusion
+Demonstrates the inclusion of a separated graph in Apollo server

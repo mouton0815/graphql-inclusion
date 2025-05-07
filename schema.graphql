@@ -1,0 +1,16 @@
+type Address {
+    street: String
+    zip: String
+    city: String
+    country: String
+}
+
+type Store {
+    name: String
+    address: Address
+}
+
+type Query {
+    stores: [Store]
+    store(name: String!): Store
+}
