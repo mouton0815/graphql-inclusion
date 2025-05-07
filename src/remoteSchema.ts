@@ -3,8 +3,8 @@ import { UrlLoader } from '@graphql-tools/url-loader'
 import { wrapSchema } from '@graphql-tools/wrap'
 import { fetch } from 'cross-fetch'
 
-export async function getRemoteSchema() {
-    const schema = await loadSchema('http://localhost:8080/graphql', {
+export async function getRemoteSchema(url: String) {
+    const schema = await loadSchema(url, {
         loaders: [new UrlLoader()],
         fetch,
     })
